@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="MF Block">
+<meta name="theme-color" content="#141A17">
+<title>Micheál's Weakness Block</title>
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAGgUlEQVR4nO2dMc4kNRBGZxEBOQgkuAoRKRHXQFxho70C4hpEpERchQAkckKCln41mqmetl3fV9Wz78UzXdbUc7ndY7vfffH1VzeAR3xS3QDoC3JACHJACHJACHJACHJACHJACHJACHJACHJACHJACHJACHJACHJACHJACHJACHJACHJACHJACHJACHJAyKfVDfgfv37z+fEHfvjzH09LdHz23c/HH/j39588LXnKu/KtCU+FiLiQKE+FiKgVpVKOaS32NFdkWos9VYoUyJHixD2tLElx4h6zJe4bUpEZ0iuPIjJDeuWH+CqHLXmFJcSWPE8JMVUOZ7euKiHObu2J5ZDDny1/RHPB90SUy1HVj51x/WZ44mrlqL1J9ESvMsMQXShHh+mDug21ZqjboJKjgxkbupZ0MGND1BLJVHYlHwcTUdFl51jJx8FEVHTZOfLlmEvhUPIMIY6ZS+FQ8gwhnlL/r+xEzrav9Bm5njKRs+0rtSNX8j3HaMJWevPod7NkGk3YSm8e/W6uTJnDytCvn1jknXGHfv3EIl8St2YlWO7tYav/Y9/IHf5L/rUvkEORy25+KHLp9yNNjqvcHq60s8+DjWOy2umuHLou3qd46Lr4JRf7nOyO6vydvP5c8TjZHdX5O3n9lOLB1gQI8cnhKfu1g4un7NsGFyoHhCTIcZV5yp7RNl9lnrJnvc2myuGs9lUji3Mq8VILjOGKIAeEIAeEIAeEIAeEIAeEIAeEIAeEsJE6DTZSP6DPQorzjLa5zzld51lvM8MKhPjk8FT72n8BPdXeNn5ROSAkRw7p+rzzSFcrOtfnrV8/5SaJA+PyeZkD49LkuMqcZaWdV5mzXHjHm6KL9ykbG4ou7l+NVnNDmpvLbmZs5OayZJ1i8vkczl32/nAbzl32/nB7kiuH81iEEjNu3mMRCs24dTi8Zcux4WSfQrYcG072yYUzwSbhTLB5WnVu0TS7Q+d+QzHNVs1W+jz20LWkz2MPUUuEU9kOfqjb0MEPXRu0zzlq/fBEr/VDGl3+EKzKD2fcKj/UcR1PSP1++CP6/TBEZCN1Gq+3kdr9AkDpFLfDLfBNPMV1KsiBcfm8zIFxvFdWC++VXYI3Uh/w8b6R+h7eZX+rFmJPLzmgFWxNgBDkgBDkgBDkgBDkgBDkgBDkgBDkgBDkgBDkgBDkgBDkgBDkgBDkgJD6jdR7fnv/1/EHvv9w+QUGX/747fEH/v7lD09LnlK/nuOpEBEXEuWpEBG1olTKMa3FnuaKTGuxp0qRAjlSnLinlSUpTtxjtsR9QyoyQ3rlUURmSK/8EF/lsCWvsITYkucpIabK4ezWVSXE2a09sRxy+LPlj2gu+J6Icjmq+rEzrt8MT1ytHLU3iZ7oVWYYogvl6DB9ULeh1gx1G1RydDBjQ9eSDmZsiFoimcqu5ONgIiq67Bwr+TiYiIouO0e+HHMpHEqeIcQxcykcSp4hxFPq/5WdyNn2lT4j11MmcrZ9pXbkSr7nGE3YSm8e/W6WTKMJW+nNo9/NlSlzWBn69ROLvDPu0K+fWORL4tasBMu9PWz1f+wbucN/yb/2BXIoctnND0Uu/X6kyXGV28OVdvZ5sHFMVjvdlUPXxfsUD10Xv+Rin5PdUZ2/k9efKx4nu6M6fyevn1I82JoAIT45PGW/dnDxlH3b4ELlgJAEOa4yT9kz2uarzFP2rLfZVDmc1b5qZHFOJV5qgTFcEeSAEOSAEOSAEOSAEOSAEOSAEOSAEDZSp8FG6gf0WUhxntE29zmn6zzrbWZYgRCfHJ5qX/svoKfa28YvKgeE5MghXZ93HulqRef6vPXrp9wkcWBcPi9zYFyaHFeZs6y08ypzlgvveFN08T5lY0PRxf2r0WpuSHNz2c2MjdxclqxTTD6fw7nL3h9uw7nL3h9uT3LlcB6LUGLGzXssQqEZtw6Ht2w5NpzsU8iWY8PJPrlwJtgknAk2T6vOLZpmd+jcbyim2arZSp/HHrqW9HnsIWqJcCrbwQ91Gzr4oWuD9jlHrR+e6LV+SKPLH4JV+eGMW+WHOq7jCanfD39Evx+GiGykTuP1NlK7XwAoneJ2uAW+iae4TgU5MC6flzkwjvfKauG9skvwRuoDPt43Ut/Du+xv1ULs6SUHtIKtCRCCHBCCHBCCHBCCHBCCHBCCHBCCHBCCHBCCHBCCHBCCHBCCHBCCHBCCHBCCHBCCHBCCHBCCHBCCHBDyHy3Lzc867vWFAAAAAElFTkSuQmCC">
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<style>
+:root{
+  --ground:#F2F3F0; --panel:#FFFFFF; --ink:#141A17; --muted:#5B645F; --line:#D9DDD8; --soft:#E8EBE6;
+  --red:#C3352A; --blue:#1C5CAB; --yellow:#C99700; --green:#2A8453; --grey:#8A928D;
+  --on-yellow:#1b1600; --focus:#1C5CAB;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#101412; --panel:#181E1B; --ink:#E9EDEA; --muted:#9AA39E; --line:#2A322E; --soft:#212824;
+    --red:#E0574B; --blue:#5B92DA; --yellow:#E2B32E; --green:#4CB079; --grey:#737C77; --focus:#5B92DA;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#101412; --panel:#181E1B; --ink:#E9EDEA; --muted:#9AA39E; --line:#2A322E; --soft:#212824;
+  --red:#E0574B; --blue:#5B92DA; --yellow:#E2B32E; --green:#4CB079; --grey:#737C77; --focus:#5B92DA;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;padding-inline:16px;padding-block:28px 64px}
+.wrap{max-width:980px;margin:0 auto;display:flex;flex-direction:column;gap:44px}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.01em;line-height:1;margin:0;text-wrap:balance}
+h1{font-size:clamp(2.6rem,8vw,4.4rem);font-weight:800}
+h2{font-size:1.9rem;font-weight:700}
+h3{font-size:1.25rem;font-weight:700}
+p{margin:0;max-width:66ch}
+.eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+section{display:flex;flex-direction:column;gap:18px}
+.lede{font-size:1.12rem;color:var(--ink)}
+.muted{color:var(--muted)}
+
+/* header */
+header{display:flex;flex-direction:column;gap:14px;border-bottom:3px solid var(--ink);padding-bottom:22px}
+.plates{display:flex;gap:6px}
+.plates i{width:22px;height:22px;border-radius:50%;display:block;border:4px solid var(--c);background:transparent}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:.92rem;color:var(--muted)}
+.meta b{color:var(--ink);font-weight:600}
+
+/* gap chart */
+.chart{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:18px 16px;display:flex;flex-direction:column;gap:6px}
+.row{display:grid;grid-template-columns:minmax(120px,190px) 1fr 52px;align-items:center;gap:10px;font-size:.9rem}
+.row .lbl{line-height:1.2}
+.row .lbl small{display:block;color:var(--muted);font-size:.78rem}
+.track{position:relative;height:18px}
+.track::before{content:"";position:absolute;left:65%;top:-4px;bottom:-4px;width:1px;background:var(--ink);opacity:.5}
+.bar{position:absolute;top:2px;height:14px;border-radius:2px;background:var(--c)}
+.val{text-align:right;font-family:var(--mono);font-size:.85rem;font-variant-numeric:tabular-nums}
+.axis{display:grid;grid-template-columns:minmax(120px,190px) 1fr 52px;gap:10px;font-family:var(--mono);font-size:.7rem;color:var(--muted)}
+.axis div:nth-child(2){position:relative;height:14px}
+.axis span{position:absolute;transform:translateX(-50%)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.82rem;color:var(--muted);padding-top:8px;border-top:1px solid var(--line);margin-top:6px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--c);display:inline-block}
+
+/* IFC table */
+.tbl{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:6px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.92rem}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
+tr:last-child td{border-bottom:0}
+td.rank{font-family:var(--mono);font-weight:600;white-space:nowrap}
+.pill{display:inline-block;font-family:var(--mono);font-size:.72rem;padding:2px 7px;border-radius:3px;background:var(--soft);color:var(--ink);white-space:nowrap}
+.pill.bad{background:color-mix(in srgb,var(--red) 16%,transparent);color:var(--red)}
+.pill.good{background:color-mix(in srgb,var(--green) 18%,transparent);color:var(--green)}
+
+/* priorities */
+.prio{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}
+.pc{background:var(--panel);border:1px solid var(--line);border-top:6px solid var(--c);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.pc .k{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.pc ul{margin:0;padding-left:18px;font-size:.92rem;display:flex;flex-direction:column;gap:4px}
+.pc .tgt{font-family:var(--mono);font-size:.8rem;border-top:1px dashed var(--line);padding-top:8px;display:flex;flex-direction:column;gap:2px}
+
+/* programme */
+.controls{display:flex;flex-direction:column;gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:16px}
+.weeks{display:flex;flex-wrap:wrap;gap:6px}
+.wk{font-family:var(--mono);font-size:.85rem;min-width:44px;padding:7px 8px;border:1px solid var(--line);background:var(--ground);color:var(--ink);border-radius:4px;cursor:pointer;position:relative}
+.wk[aria-pressed="true"]{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.wk.dl{border-style:dashed}
+.wk .done{position:absolute;right:3px;top:2px;font-size:.6rem;color:var(--green)}
+.wk[aria-pressed="true"] .done{color:var(--ground)}
+.blkinfo{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline}
+.blkinfo h3{font-size:1.4rem}
+.onerm{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:.9rem}
+.onerm input{width:84px;font-family:var(--mono);font-size:1rem;padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:var(--ground);color:var(--ink)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.days{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.day{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:1.05rem;letter-spacing:.03em;padding:10px 4px 8px;border:0;border-right:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:5px}
+.day:last-child{border-right:0}
+.day[aria-selected="true"]{background:var(--ink);color:var(--ground)}
+.day .dots{display:flex;gap:3px}
+.day .dots i{width:7px;height:7px;border-radius:50%;background:var(--c)}
+.session{background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.shead{padding:18px 18px 14px;display:flex;flex-direction:column;gap:8px;border-bottom:1px solid var(--line)}
+.shead .tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-family:var(--mono);font-size:.72rem;padding:3px 8px;border-radius:3px;background:var(--c);color:#fff}
+.tag.yellow{color:var(--on-yellow)}
+.part{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:16px 18px;border-bottom:1px solid var(--line)}
+.part:last-of-type{border-bottom:0}
+.part .letter{font-family:var(--display);font-weight:800;font-size:1.7rem;line-height:1;color:var(--c);display:flex;flex-direction:column;gap:4px}
+.part .letter small{font-family:var(--mono);font-size:.7rem;font-weight:500;color:var(--muted)}
+.part .body{display:flex;flex-direction:column;gap:6px;min-width:0}
+.part .name{font-weight:700;font-size:1.02rem}
+.rx{font-family:var(--mono);font-size:.9rem;background:var(--soft);border-radius:4px;padding:10px 12px;white-space:pre-line;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.why{font-size:.88rem;color:var(--muted)}
+.sfoot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 18px;background:var(--soft)}
+.chk{display:inline-flex;align-items:center;gap:8px;font-weight:600;cursor:pointer}
+.chk input{width:20px;height:20px;accent-color:var(--green)}
+
+/* rules */
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px 28px}
+.rules div{display:flex;flex-direction:column;gap:4px;border-left:2px solid var(--line);padding-left:14px}
+.rules b{font-weight:700}
+.rules p{font-size:.94rem;color:var(--muted)}
+footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:520px){
+  .row,.axis{grid-template-columns:104px 1fr 40px;gap:8px}
+  .part{grid-template-columns:34px 1fr;padding:14px}
+  .shead{padding:16px 14px 12px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="plates" aria-hidden="true"><i style="--c:var(--red)"></i><i style="--c:var(--blue)"></i><i style="--c:var(--yellow)"></i><i style="--c:var(--green)"></i></div>
+  <div class="eyebrow">12-week supplemental block · 5 × 60 min · on top of class</div>
+  <h1>Micheál's Weakness Block</h1>
+  <p class="lede">Your fitness isn't broadly weak. You lose points in one area: sustained monostructural output (bike, ski, run), and a few skills that cap everything else. Muscle-ups, heavy cleans and high-skill pulling already put you near the top of the field, so this block leaves them alone and puts the extra hour where the points are.</p>
+  <div class="meta">
+    <span>Xenom London · RX 40–44 · <b class="num">EPI 4,866</b> (2nd in your view)</span>
+    <span>Irish Fitness Champs · RX · <b class="num">12th / 24</b></span>
+    <span>Block starts <b>Mon 22 Sep</b> · retest week <b>8 Dec</b></span>
+  </div>
+</header>
+
+<section>
+  <div class="eyebrow">Xenom · where the points went</div>
+  <h2>Your score vs. the 8 men who beat you</h2>
+  <p class="muted">Points per event against the average of Glenn Phelan (London) and the Dallas 40–44 top seven, all of whom scored above 4,866. Bars left of the line are points you gave up; together they add up to <span class="num">−383</span>, the gap between you and a ~5,250 EPI.</p>
+  <div class="chart" id="gapChart" role="img" aria-label="Diverging bar chart of per-event points versus the average of athletes who beat Micheál"></div>
+</section>
+
+<section>
+  <div class="eyebrow">Irish Fitness Championships · per-event ranks of 24</div>
+  <h2>The same pattern, a month later</h2>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>Event</th><th>What it was</th><th>Rank</th><th>Read</th></tr></thead>
+      <tbody>
+        <tr><td>IE1</td><td>3 RFT 40 cal echo bike / 30 BJO / 40 wall balls, 18 cap</td><td class="rank">19th</td><td><span class="pill bad">engine</span> Capped at 310 of 330 reps. Your worst event, and it's the bike again.</td></tr>
+        <tr><td>IE2</td><td>Shuttle + snatch ladder 70 → 80 → 90 kg, 10 cap</td><td class="rank">13th</td><td><span class="pill bad">snatch</span> 8:59: finished, but slowly. The 90 kg round sits right at your 1RM.</td></tr>
+        <tr><td>IE3</td><td>AMRAP 11 legless + rope climbs / OH DB lunge / T2B</td><td class="rank">15th</td><td><span class="pill bad">rope</span> 104 reps. Your T2B are strong, so the legless climb set the pace.</td></tr>
+        <tr><td>IE4a</td><td>21-15-9 thrusters 40 kg / bar-facing burpees</td><td class="rank">12th</td><td><span class="pill">cycling</span> 4:51. Mid-pack: light-barbell engine.</td></tr>
+        <tr><td>IE4b</td><td>9-7-5 OHS 60 kg / ring muscle-ups</td><td class="rank">2nd</td><td><span class="pill good">strength</span> 5:31. Same as Xenom 006: this is your weapon.</td></tr>
+        <tr><td>IE5</td><td>Clean + S2OH 80 kg / HS walk 30-60-90 ft, 9 cap</td><td class="rank">14th</td><td><span class="pill bad">inverted</span> Capped 65 reps short. You cleaned 140 kg at Xenom, so 80 kg wasn't the limiter. The handstand walk was.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">What the block attacks · colour-coded like bumper plates</div>
+  <h2>Four priorities, ranked by points</h2>
+  <div class="prio">
+    <div class="pc" style="--c:var(--blue)">
+      <div class="k"><h3>Engine</h3><span class="num muted">−238 pts</span></div>
+      <ul><li>005 run + ski: <b>last</b> of 9 (−136)</li><li>003 1-min bike: 26 cal (−74)</li><li>008 burpee/ski/bike (−28)</li><li>IFC IE1: 19th</li></ul>
+      <div class="tgt"><span>2k ski + 3k run: 24:57 → <b>22:30</b></span><span>1-min echo bike: 26 → <b>30 cal</b></span><span>008 chipper: 187 → <b>205 reps</b></span></div>
+    </div>
+    <div class="pc" style="--c:var(--green)">
+      <div class="k"><h3>Inverted &amp; rope</h3><span class="num muted">−92 pts</span></div>
+      <ul><li>002 wall walk / rope ladder: 32 reps</li><li>IFC IE3 legless rope: 15th</li><li>IFC IE5 HS walk: capped</li></ul>
+      <div class="tgt"><span>002: 32 → <b>40+</b> (into round 5)</span><span>HS walk: <b>90 ft unbroken</b></span><span>Legless: <b>2 touch-and-go</b></span></div>
+    </div>
+    <div class="pc" style="--c:var(--red)">
+      <div class="k"><h3>Snatch</h3><span class="num muted">−70 pts</span></div>
+      <ul><li>90 kg snatch vs 140 kg cleans done for reps</li><li>That's 64% of your clean. Typical is 78–82%</li><li>IFC IE2: 13th</li></ul>
+      <div class="tgt"><span>1RM: 90 → <b>97.5 kg</b></span><span>90 kg ×5 in the ladder: <b>smooth</b></span></div>
+    </div>
+    <div class="pc" style="--c:var(--yellow)">
+      <div class="k"><h3>Barbell cycling</h3><span class="num muted">−35 pts</span></div>
+      <ul><li>004 at 70 kg: 90 reps = 3 rounds flat</li><li>Leaders: 104–116 reps</li><li>IFC IE4a thrusters: 12th</li></ul>
+      <div class="tgt"><span>004: 90 → <b>105 reps</b></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="programme">
+  <div class="eyebrow">The programme</div>
+  <h2>Pick a week, pick a day</h2>
+  <div class="controls">
+    <div class="weeks" id="weeks" role="group" aria-label="Week"></div>
+    <div class="blkinfo"><h3 id="blkName"></h3><span class="muted" id="blkNote"></span></div>
+    <label class="onerm" for="rm">Snatch 1RM (kg), which sets every snatch % below: <input id="rm" type="number" inputmode="decimal" min="40" max="200" step="0.5" value="90"></label>
+  </div>
+  <div class="days" id="days" role="tablist" aria-label="Day"></div>
+  <div class="session" id="session" role="tabpanel"></div>
+</section>
+
+<section>
+  <div class="eyebrow">How to run it alongside class</div>
+  <h2>Rules that keep this sustainable</h2>
+  <div class="rules">
+    <div><b>Class first, this second</b><p>Do the supplemental after class, or at another point in the day. The Tuesday aerobic work suits a separate slot best, since easy volume is what it needs.</p></div>
+    <div><b>Class overlaps? Swap, don't stack</b><p>If class programmes heavy snatches on Mon/Thu, drop part A here and keep the rest. If class is a long engine piece, cut Tuesday to 30 min Z2.</p></div>
+    <div><b>Engine work is paced, not tested</b><p>Z2 means you can say full sentences. Most people run it too hard. Save hard efforts for the intervals and sims.</p></div>
+    <div><b>Deloads are dashed</b><p>Weeks 4 and 8 cut volume by ~40%. Take them even if you feel good; that's when the adaptation happens at 40+.</p></div>
+    <div><b>Auto-regulate Friday</b><p>If you're sore or sleep was poor, turn Friday into 40 min Z2 bike/ski. Missing one threshold day costs nothing, but digging a hole does.</p></div>
+    <div><b>Fuel the extra 5 hours</b><p>That's roughly 5 extra training hours a week. Carbs around sessions and enough sleep decide whether it turns into fitness.</p></div>
+  </div>
+</section>
+
+<footer>Built from your Xenom London 2026 scores (RX 40–44), the Xenom Dallas 2026 M 40–44 leaderboard, and your IFC event results. Xenom event standards are from the published 10-event list. Snatch percentages assume a 90 kg 1RM, so update the box above if your true best is different. Paces and targets are goals to aim at, not predictions.</footer>
+</div>
+
+<script>
+(function(){
+const store={get(k,d){try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+/* ---------- gap chart ---------- */
+const ev=[
+ ["001","1RM snatch",-70,"red"],["002","Wall walk / rope",-92,"green"],["003","1-min echo bike",-74,"blue"],
+ ["004","DL / FS / S2OH / thruster",-35,"yellow"],["005","2k ski + 3k run",-136,"blue"],["006","T2B / DB snatch / MU",73,"grey"],
+ ["007","5RM rhino DL",-30,"grey"],["008","Burpee / ski / bike",-28,"blue"],["009","Clean ladder",-13,"grey"],["010","HSPU / C2B / lunge",22,"grey"]];
+const MIN=-150,MAX=80,span=MAX-MIN,pos=v=>((v-MIN)/span*100);
+const chart=document.getElementById("gapChart");
+let h="";
+ev.forEach(([n,l,v,c])=>{const a=pos(Math.min(0,v)),b=pos(Math.max(0,v));
+ h+=`<div class="row"><div class="lbl"><span class="num">${n}</span> ${l}</div><div class="track"><div class="bar" style="--c:var(--${c});left:${a}%;width:${b-a}%"></div></div><div class="val">${v>0?"+":""}${v}</div></div>`;});
+h+=`<div class="axis"><div></div><div>${[-150,-100,-50,0,50].map(t=>`<span style="left:${pos(t)}%">${t}</span>`).join("")}</div><div></div></div>`;
+h+=`<div class="legend"><span><i class="dot" style="--c:var(--blue)"></i>Engine</span><span><i class="dot" style="--c:var(--green)"></i>Inverted &amp; rope</span><span><i class="dot" style="--c:var(--red)"></i>Snatch</span><span><i class="dot" style="--c:var(--yellow)"></i>Barbell cycling</span><span><i class="dot" style="--c:var(--grey)"></i>Not targeted: strength &amp; skill you already have</span></div>`;
+chart.innerHTML=h;
+
+/* ---------- programme data ---------- */
+const BLOCKS=[
+ {name:"Block 1 · Base & positions",note:"Aerobic volume, snatch positions, inverted volume. Week 4 deload."},
+ {name:"Block 2 · Build",note:"Threshold engine, heavier snatch, Xenom-specific pieces. Week 8 deload."},
+ {name:"Block 3 · Sharpen",note:"Race-pace work and full sims. Week 12 is the retest."}];
+const DAYNAMES=["Mon","Tue","Wed","Thu","Fri"];
+/* rx arrays = week-in-block 1..4. {NN%} renders as % + kg from 1RM */
+const P=[
+/* ===== BLOCK 1 ===== */
+[
+ {title:"Snatch positions + bike power",tags:["red","blue"],parts:[
+  {c:"red",m:8,name:"Snatch primer (empty bar)",rx:"3 rounds: 3 snatch balance · 3 tall snatch · 3 snatch pull with 2s pause at knee",why:"Groove the turnover before loading. Your pull is strong; the issue is getting under the bar."},
+  {c:"red",m:22,name:"Hang snatch + snatch",rx:["EMOM 10: 1 hang (above knee) + 1 from floor @ {60%}","EMOM 10 @ {65%}","EMOM 12 @ {68%}","EMOM 6 @ {60%}: crisp"],why:"Aggressive, fast feet. If a rep is slow or pressed out, repeat the weight instead of going up."},
+  {c:"red",m:8,name:"Snatch pull",rx:["3×3 @ {95%}","3×3 @ {100%}","4×3 @ {105%}","2×3 @ {90%}"],why:"Bar stays close, finish tall, then down. No early arm bend."},
+  {c:"blue",m:15,name:"Echo bike alactic power",rx:["8 × 10s all-out / 50s easy spin","10 × 10s / 50s","12 × 10s / 50s","6 × 10s / 50s"],why:"Xenom 003 is a 60s sprint. You need more top-end power before you can hold it. Note peak RPM each set."}
+ ]},
+ {title:"Aerobic base: ski + run",tags:["blue"],parts:[
+  {c:"blue",m:45,name:"Zone 2 ski / run alternating",rx:["40 min: 4 × (5 min ski + 5 min run), conversational pace","45 min: 3 × (5 min ski + 10 min run)","50 min: 2 × (10 min ski + 15 min run)","30 min easy, any split"],why:"Xenom 005 was your biggest points loss (−136). You can hold a sentence throughout; nasal breathing if you can. If HR drifts up, slow down."},
+  {c:"blue",m:5,name:"Strides",rx:["4 × 20s fast-but-relaxed run, walk back","4 × 20s","6 × 20s","none"],why:"Run mechanics at speed without the fatigue cost."},
+  {c:"grey",m:10,name:"Mobility",rx:"Couch stretch 2×1 min/side · pigeon 1 min/side · thoracic extension on roller 2 min · overhead band dislocates 2×15",why:"Hips and T-spine feed both the snatch catch and the handstand."}
+ ]},
+ {title:"Inverted & rope",tags:["green"],parts:[
+  {c:"green",m:14,name:"Handstand walk practice",rx:["Week 1 baseline: best of 3 max unbroken HS walk (note it). Then 8 min: freestanding kick-up holds, 20–30s","10 min: accumulate 15 m walking, reset on every fall","12 min: EMOM 5 m unbroken","6 min easy practice"],why:"IFC IE5 capped 65 reps short, and the HS walk was where it stalled. Short, clean attempts beat long ugly ones."},
+  {c:"green",m:14,name:"Wall walk + rope climb EMOM",rx:["EMOM 12, alternating: 3 wall walks / 1 rope climb (efficient foot lock, minimal arm)","EMOM 14","EMOM 16","EMOM 8"],why:"Xenom 002 pattern. Find the fastest wall walk: hands to the line, nose to the wall, walk down fast."},
+  {c:"green",m:12,name:"Legless rope progression",rx:["4 × (1 legless from seated + 3 lock-off pulls on rope)","5 × same","5 × (1 legless full height if possible)","3 × 1"],why:"IFC IE3 opened every round with a legless climb. Long arms, big reaches, no chicken-winging."},
+  {c:"green",m:10,name:"Strict HSPU (deficit)",rx:["4 × 5 @ 5 cm deficit","5 × 5","5 × 6","3 × 4"],why:"Overhead pressing strength in the inverted position also carries into the HS walk."}
+ ]},
+ {title:"Snatch #2 + barbell cycling",tags:["red","yellow"],parts:[
+  {c:"red",m:6,name:"Muscle snatch",rx:"3 × 3 @ {40%}",why:"Teaches finishing the pull and punching up. No re-bend."},
+  {c:"red",m:14,name:"Power snatch + overhead squat",rx:["EMOM 10: 1 power snatch + 1 OHS @ {60%}","EMOM 10 @ {63%}","EMOM 10 @ {66%}","EMOM 6 @ {55%}"],why:"Your OHS is elite (IFC IE4b 2nd). Use it: catch the power, ride it down."},
+  {c:"yellow",m:25,name:"Xenom 004 intervals",rx:["3 × 3:00 AMRAP of 12 DL / 9 FS / 6 S2OH / 3 thruster @ 60 kg, rest 3:00","3 × 3:00 @ 65 kg","3 × 3:00 @ 70 kg","2 × 2:00 @ 60 kg"],why:"You did exactly 3 rounds (90). Leaders did 3.5–3.9. Aim for DL and FS unbroken, and never drop the bar between front squats and S2OH."},
+  {c:"grey",m:10,name:"Midline",rx:"3 rounds: 30s hollow rock · 10 strict GHD or AbMat sit-ups · 20s side plank each side",why:""}
+ ]},
+ {title:"Mixed engine, steady",tags:["blue","green"],parts:[
+  {c:"blue",m:36,name:"Long mixed-modal EMOM (RPE 6–7)",rx:["EMOM 30, rotating:\n1) 12/10 cal echo bike\n2) 10 wall balls (9 kg) + 5 box jump-overs\n3) 12 cal ski\n4) 8 lateral burpees over line\n5) rest","EMOM 35","EMOM 40","EMOM 20"],why:"Same pieces as IFC IE1 and Xenom 008. Hold the same pace every round, and don't sprint the first few minutes."},
+  {c:"blue",m:15,name:"Easy flush",rx:["10 min Z2 bike + 5 min stretch","same","same","same"],why:""}
+ ]}
+],
+/* ===== BLOCK 2 ===== */
+[
+ {title:"Snatch from the floor + bike sprints",tags:["red","blue"],parts:[
+  {c:"red",m:8,name:"Snatch primer",rx:"3 rounds: 3 snatch balance · 3 hang squat snatch (empty bar) · 3 drop snatch",why:""},
+  {c:"red",m:18,name:"Snatch EMOM",rx:["EMOM 12: 1 snatch @ {75%}","EMOM 12 @ {78%}","EMOM 12 @ {80%}","EMOM 8 @ {65%}"],why:"Every rep is a technique rep. Miss two in a row and drop 5 kg."},
+  {c:"red",m:10,name:"Pause snatch (at knee)",rx:["4 × 2 @ {70%}","4 × 2 @ {72%}","5 × 2 @ {72%}","3 × 1 @ {65%}"],why:"Fixes position at the knee so the bar stays in close."},
+  {c:"blue",m:18,name:"Echo bike 20s sprints",rx:["6 × 20s max / 1:40 easy","7 × 20s / 1:40","8 × 20s / 1:40","4 × 20s / 1:40"],why:"Record calories each rep. The goal is to hold the rep-1 number through the last rep."}
+ ]},
+ {title:"Threshold: ski + run",tags:["blue"],parts:[
+  {c:"blue",m:44,name:"Threshold intervals",rx:["4 × (500 m ski + 1 km run) @ threshold, 2:00 rest","5 × (500 m ski + 1 km run), 2:00 rest","3 × (1000 m ski + 1.5 km run), 3:00 rest","3 × (500 m ski + 1 km run), easy-moderate"],why:"Threshold = hard but steady, the pace you could hold for ~40 min. Goal race pace for 22:30 is roughly 2:03/500 m ski and 4:40/km run. Threshold reps should sit right around there."},
+  {c:"grey",m:12,name:"Easy cooldown + mobility",rx:"5 min easy bike · couch stretch · pigeon · T-spine",why:""}
+ ]},
+ {title:"Inverted & rope: Xenom 002 build",tags:["green"],parts:[
+  {c:"green",m:12,name:"HS walk EMOM",rx:["EMOM 10: 7.5 m (25 ft) unbroken","EMOM 12: 7.5 m","EMOM 12: 10 m","EMOM 6: 5 m"],why:"If you fail a rep, the next minute's rep is a 20s hold instead."},
+  {c:"green",m:18,name:"Xenom 002 ladder",rx:["Rounds 1–4 for time (2/1, 4/2, 6/3, 8/4 wall walks / rope climbs), rest 4:00, repeat. Goal sub-7:00","Full 002 sim, 8:00 cap. Log reps","Rounds 1–4 for time ×2, rest 4:00. Goal sub-6:30","Rounds 1–3 once, easy"],why:"You got 32 reps = round 4 done + 2. Finishing round 4 by ~6:30 opens up round 5 (15 reps). That's where 40+ lives."},
+  {c:"green",m:10,name:"Legless rope climb",rx:["5 × 1 (full height), 90s rest","6 × 1","4 × 2 (touch-and-go if possible)","3 × 1"],why:""},
+  {c:"green",m:10,name:"Kipping HSPU (deficit)",rx:["5 × 6 @ 5 cm deficit","5 × 7","5 × 8","3 × 5"],why:"Xenom 010 goes 6 HSPU per round. Make it one set, every round."}
+ ]},
+ {title:"Snatch cycling + barbell engine",tags:["red","yellow"],parts:[
+  {c:"red",m:15,name:"Touch-and-go snatch",rx:["EMOM 10: 3 TnG power snatch @ {65%}","EMOM 8: 3 TnG @ {70%}","EMOM 8: 2 TnG squat snatch @ {75%}","EMOM 6: 2 TnG power @ {60%}"],why:"IFC IE2 was 5-rep sets at 70–90 kg. Same bar path every rep, and let it bounce."},
+  {c:"yellow",m:28,name:"Barbell engine",rx:["5:00 Xenom 004 @ 70 kg for score (log it). Rest 5:00, then 3 × (10 thrusters @ 40 kg + 10 bar-facing burpees), rest 1:00","4 × 2:00 AMRAP Xenom 004 @ 70 kg, rest 1:30. Target 24+ reps each","2 × 5:00 Xenom 004 @ 70 kg, rest 5:00. Beat the Week 5 score both times","3 × 2:00 @ 60 kg, smooth"],why:"Breathe at the top of the DL and in the front rack, and never let go of the bar."},
+  {c:"grey",m:10,name:"Midline",rx:"3 rounds: 12 GHD sit-ups · 30s L-sit (accumulate) · 10 each side weighted Russian twist",why:""}
+ ]},
+ {title:"Threshold mixed-modal",tags:["blue","green"],parts:[
+  {c:"blue",m:32,name:"Threshold intervals",rx:["4 × (4:00 on / 2:00 off): 20 cal bike · 10 BJO · 20 wall balls · AMRAP lateral burpees","5 × (4:00 on / 2:00 off)","3 × (6:00 on / 3:00 off): 30 lateral burpees · 30 cal ski · 30 cal bike (Xenom 008 first half)","3 × (3:00 on / 3:00 off), easy"],why:"Score the burpees each round and keep them within 2 reps of round one."},
+  {c:"blue",m:15,name:"Z2 bike flush",rx:"15 min, conversational",why:""}
+ ]}
+],
+/* ===== BLOCK 3 ===== */
+[
+ {title:"Heavy snatch + 1-minute bike",tags:["red","blue"],parts:[
+  {c:"red",m:8,name:"Snatch primer",rx:"3 rounds: 3 snatch balance · 2 hang power snatch · 2 snatch from floor (empty → 50%)",why:""},
+  {c:"red",m:22,name:"Snatch intensity",rx:["Waves: 3 @ {80%} · 2 @ {85%} · 1 @ {88%} · 3 @ {82%} · 2 @ {87%} · 1 @ {90%}+ (singles, 90s rest)","EMOM 10: 1 @ {85%}","Build to a heavy single for the day (cap {95%}), then 3 × 1 @ {88%}","—"],why:"Only make lifts that look like your technique reps. Stop the moment a lift turns into a grind."},
+  {c:"blue",m:20,name:"1-minute bike specificity",rx:["4 × 30s max / 2:30 easy, then 1 × 60s max. Log the 60s","3 × 60s max / 4:00 easy. Pace: fast for 20s, hold, empty the tank in the last 15s","2 × 60s max / 5:00 easy. Target 29+","—"],why:"Xenom 003: 26 cal. Leaders did 30–34. Don't open all-out, or you fade from second 35."}
+ ]},
+ {title:"Race pace: ski + run",tags:["blue"],parts:[
+  {c:"blue",m:42,name:"Xenom 005 pace work",rx:["2 × (1000 m ski + 1.5 km run) @ goal race pace (2:03/500 m, 4:40/km), rest 4:00","2000 m ski @ 2:02/500 m straight into 1.5 km run @ 4:40/km. Rest 5:00, then 1.5 km @ 4:35/km","3 × (700 m ski + 1 km run) slightly faster than goal pace, rest 3:00","—"],why:"Practise the ski-to-run transition: stand up, first 200 m relaxed while your legs come back, then hold pace."},
+  {c:"grey",m:12,name:"Easy cooldown + mobility",rx:"5 min easy bike · couch stretch · pigeon · T-spine",why:""}
+ ]},
+ {title:"Inverted & rope: sims",tags:["green"],parts:[
+  {c:"green",m:16,name:"IFC IE5-style HS walk",rx:["3 × (30 ft + 60 ft HS walk), rest as needed","3 rounds: 6 S2OH @ 60 kg + 30 ft HS walk, rest 2:00","2 rounds: 9 power clean @ 70 kg + 9 S2OH + 60 ft HS walk, rest 3:00","—"],why:"Walking on your hands with a pumped-up upper body. Shake out, breathe, then kick up."},
+  {c:"green",m:16,name:"Xenom 002",rx:["Full sim, 8:00 cap. Target 38","3 × 2:00 on / 2:00 off, starting at round 4 (8 WW / 4 RC) each time","Full sim, 8:00 cap. Target 40+","—"],why:""},
+  {c:"green",m:12,name:"Legless rope",rx:["3 × 2 touch-and-go legless","4 × 2 TnG","3 × 2 TnG, full height","—"],why:""},
+  {c:"green",m:8,name:"Strict HSPU",rx:["3 × max, rest 2:00","3 × max","2 × max","—"],why:""}
+ ]},
+ {title:"Snatch ladder + Xenom 004",tags:["red","yellow"],parts:[
+  {c:"red",m:18,name:"IFC IE2-style snatch ladder",rx:["For time: 3 × (2 shuttles + 5 snatch @ {75%}) → 2 × (… @ {82%}) → 1 × (… @ {88%}). 10 cap","EMOM 8: 3 TnG snatch @ {75%}","For time, same ladder @ {78%} → {85%} → {90%}","—"],why:"Shuttle = 30 ft down and back. Walk to the bar, breathe, and lift on the exhale."},
+  {c:"yellow",m:25,name:"Xenom 004 pace",rx:["5:00 @ 70 kg for score. Target 100","IFC IE4a: 21-15-9 thruster @ 40 kg + bar-facing burpee. Beat 4:51. Rest 5:00, then 3:00 of 004 @ 70 kg","5:00 @ 72.5 kg (overload), rest 5:00, 3:00 @ 70 kg","—"],why:""},
+  {c:"grey",m:8,name:"Midline",rx:"3 rounds: 12 GHD sit-ups · 30s hollow hold",why:""}
+ ]},
+ {title:"Race-specific mixed engine",tags:["blue","green"],parts:[
+  {c:"blue",m:30,name:"Competition sim",rx:["Xenom 008, full, 12:00 cap. Target 200 reps (you: 187)","IFC IE1 sim: 3 RFT 40 cal echo bike / 30 BJO / 40 wall balls (9 kg), 18 cap. Target: finish, sub-17:00","3 × (15 lateral burpees + 15 cal ski + 15 cal bike) @ race pace, rest 2:00","—"],why:"Pacing plan for 008: burpees at a steady 1 every ~3s, calories at a pace you could hold for 20 min, then spend everything in the final max-burpee window."},
+  {c:"blue",m:15,name:"Z2 flush",rx:"15 min easy bike/ski",why:""}
+ ]}
+]];
+/* Week 12 retest */
+const TEST=[
+ {title:"Retest: bike + snatch",tags:["blue","red"],parts:[
+  {c:"red",m:20,name:"Snatch 1RM",rx:"Build over 12 min: {70%} ×1, {80%} ×1, {88%} ×1, {93%} ×1, then attempts. Baseline: 90 kg. Target 97.5 kg",why:"Same format as Xenom 001 (9 min cap in comp)."},
+  {c:"blue",m:15,name:"Xenom 003: 1-min echo bike",rx:"Thorough warm-up with 3 × 5s spin-ups. Then 60s max. Baseline 26 · Target 30",why:""}
+ ]},
+ {title:"Retest: Xenom 005",tags:["blue"],parts:[
+  {c:"blue",m:45,name:"2k ski + 3k run for time",rx:"Full warm-up, then for time. Baseline 24:57 · Target 22:30",why:"Ski 2:03/500 m, run 4:40/km. Don't go out harder than that."}]},
+ {title:"Retest: Xenom 002 + HS walk",tags:["green"],parts:[
+  {c:"green",m:12,name:"Max unbroken HS walk",rx:"Best of 3. Compare to Week 1 baseline. Target 90 ft (27 m)",why:""},
+  {c:"green",m:20,name:"Xenom 002, 8:00 cap",rx:"Baseline 32 reps · Target 40+",why:""}]},
+ {title:"Retest: Xenom 004",tags:["yellow"],parts:[
+  {c:"yellow",m:20,name:"5:00 AMRAP @ 70 kg",rx:"12 DL / 9 FS / 6 S2OH / 3 thruster. Baseline 90 · Target 105",why:""}]},
+ {title:"Retest: Xenom 008",tags:["blue"],parts:[
+  {c:"blue",m:25,name:"12:00 cap chipper",rx:"30 lat burpee / 30 cal ski / 30 cal bike / 30 lat burpee / 30 cal bike / 30 cal ski / max lat burpee. Baseline 187 · Target 205",why:""}]}
+];
+const START=new Date(2026,8,22);
+
+/* ---------- state ---------- */
+let week=store.get("mf_week",1), day=store.get("mf_day",0), rm=store.get("mf_rm",90);
+let done=store.get("mf_done",{});
+const rmIn=document.getElementById("rm"); rmIn.value=rm;
+
+function kg(p){return Math.round(rm*p/100*2)/2}
+function fmt(s){return s.replace(/\{(\d+(?:\.\d+)?)%\}/g,(m,p)=>`${p}% (${kg(+p)} kg)`)}
+function dateFor(w,d){const x=new Date(START);x.setDate(x.getDate()+(w-1)*7+d);return x.toLocaleDateString("en-IE",{weekday:"short",day:"numeric",month:"short"})}
+function sessionFor(w,d){ if(w===12) return {s:TEST[d],wi:0}; const b=Math.floor((w-1)/4); return {s:P[b][d],wi:(w-1)%4}; }
+
+function renderWeeks(){
+ const el=document.getElementById("weeks");
+ el.innerHTML=Array.from({length:12},(_,i)=>{const w=i+1;const n=[0,1,2,3,4].filter(d=>done[w+"-"+d]).length;
+  const dl=(w===4||w===8)?" dl":"";
+  return `<button class="wk${dl}" id="wk${w}" aria-pressed="${w===week}" data-w="${w}" title="Week ${w}${dl?" · deload":""}${w===12?" · retest":""}">W${w}${n===5?'<span class="done">●</span>':""}</button>`}).join("");
+ el.querySelectorAll(".wk").forEach(b=>b.onclick=()=>{week=+b.dataset.w;store.set("mf_week",week);render()});
+ const b=Math.floor((week-1)/4);
+ document.getElementById("blkName").textContent= week===12?"Week 12 · Retest":`${BLOCKS[b].name} · Week ${week}`;
+ document.getElementById("blkNote").textContent= week===12?"Class light or skipped this week. These are your new baselines.":(week===4||week===8)?"Deload week: volume is cut, quality stays high.":BLOCKS[b].note;
+}
+function renderDays(){
+ const el=document.getElementById("days");
+ el.innerHTML=DAYNAMES.map((n,i)=>{const {s}=sessionFor(week,i);
+  return `<button class="day" role="tab" id="day${i}" aria-selected="${i===day}" data-d="${i}">${n}<span class="dots">${s.tags.map(t=>`<i style="--c:var(--${t})"></i>`).join("")}</span></button>`}).join("");
+ el.querySelectorAll(".day").forEach(b=>b.onclick=()=>{day=+b.dataset.d;store.set("mf_day",day);render()});
+}
+function renderSession(){
+ const {s,wi}=sessionFor(week,day);
+ const key=week+"-"+day;
+ const parts=s.parts.map((p,i)=>{const rx=Array.isArray(p.rx)?p.rx[wi]:p.rx; if(rx==="—")return "";
+  return `<div class="part" style="--c:var(--${p.c})"><div class="letter">${String.fromCharCode(65+i)}<small>${p.m}′</small></div><div class="body"><div class="name">${p.name}</div><div class="rx">${fmt(rx)}</div>${p.why?`<div class="why">${p.why}</div>`:""}</div></div>`}).join("");
+ const mins=s.parts.reduce((a,p)=>{const rx=Array.isArray(p.rx)?p.rx[wi]:p.rx;return a+(rx==="—"?0:p.m)},0);
+ document.getElementById("session").innerHTML=
+ `<div class="shead"><div class="eyebrow">${dateFor(week,day)} · ~${mins} min</div><h3>${s.title}</h3><div class="tags">${s.tags.map(t=>`<span class="tag ${t}" style="--c:var(--${t})">${{red:"Snatch",blue:"Engine",green:"Inverted & rope",yellow:"Barbell cycling"}[t]}</span>`).join("")}</div></div>
+  ${parts}
+  <div class="sfoot"><label class="chk" for="done-${key}"><input type="checkbox" id="done-${key}" ${done[key]?"checked":""}> Session done</label><span class="muted" style="font-size:.85rem">Ticks are saved on this device only</span></div>`;
+ document.getElementById("done-"+key).onchange=e=>{done[key]=e.target.checked;store.set("mf_done",done);renderWeeks()};
+}
+function render(){renderWeeks();renderDays();renderSession()}
+rmIn.oninput=()=>{const v=parseFloat(rmIn.value);if(v>=40&&v<=200){rm=v;store.set("mf_rm",rm);renderSession()}};
+render();
+})();
+</script>
+</body>
+</html>
